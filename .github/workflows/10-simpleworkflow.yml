@@ -8,12 +8,12 @@ jobs:
      information:
                 runs-on: ubuntu-latest
                 steps:
-                    -name :CheckOutrepositiory
+                    -name : CheckOutrepositiory
                      uses :actions/checkout@v4
 
-                    -name:Commit Info
-                    run:|                     
-                      echo "Branch:${{github.ref_name }}"
+                    -name: Commit Info
+                    run: |                     
+                      echo "Branch:${{ github.ref_name }}"
                       echo "Commit SHA:${{ github.sha }}"
                       echo "Pushed by:${{ github.actor }}"
                       echo "Commit message:${{ github.event.head_commit.message }}"
