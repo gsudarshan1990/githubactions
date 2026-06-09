@@ -8,5 +8,9 @@ jobs:
         run: echo "Hello World"
       - name: say first github
         run: echo "This is first github actions"
+      - name: list files
+        run: ls -a
+      - name : working directory
+        run : pwd
 
   
