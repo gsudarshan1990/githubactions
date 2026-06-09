@@ -1,0 +1,10 @@
+name : Say hell world
+on : push
+jobs:
+  say-hello:
+  runs-on-ubuntu latest
+  steps:
+    name: first
+    run : echo "Hello world"
+    name: second
+    run : echo "First actions"
